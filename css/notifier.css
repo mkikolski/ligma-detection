@@ -1,0 +1,18 @@
+.notifier {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    visibility: hidden;
+}
+
+.hidden {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: visibility 0s 2s, opacity 2s linear;
+}

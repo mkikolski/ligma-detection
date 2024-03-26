@@ -1,0 +1,38 @@
+.upload_field {
+    outline: 2px dashed var(--bs-secondary, #c1ddef);
+    outline-offset: -12px;
+    border-radius: 24px;
+    transition:
+        outline-offset 0.2s ease-out,
+        outline-color 0.3s ease-in-out,
+        background-color 0.2s ease-out;
+}
+
+.upload_field.highlight {
+    outline-offset: -4px;
+    outline-color: var(--bs-primary, #0576bd) !important;
+    background-color: var(--bs-dark, #c8dadf) !important;
+}
+
+.image_size {
+    max-height: 70vh !important;
+    max-width: 70vw !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+    
+
+  .fieldset_size {
+    height: 50vh !important;
+    width: 50vw !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .central-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 6% !important;
+  }
