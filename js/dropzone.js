@@ -1,6 +1,5 @@
 /* Bootstrap 5 JS included */
 
-// console.clear();
 ('use strict');
 
 
@@ -91,9 +90,12 @@
         console.log("File: ", file.name, "  Type: ", file.type, "  Size: ", file.size);
         document.getElementById("upload_field_container").style.cssText = "display: none !important";
         let img_cont = document.getElementById("image_container");
-        let img = img_cont.querySelector('img');
+        let img = img_cont.querySelectorAll('img');
+        document.getElementById("stats_container").style.visibility = "visible";
         img_cont.style.display = "block";
-        img.src = reader.result;
+        img.forEach(img => {
+          img.src = reader.result;
+        }) 
         invokeNotifier(FILE_LOADED_NOTIFICATION);
       }
     }

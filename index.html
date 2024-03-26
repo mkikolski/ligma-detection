@@ -19,7 +19,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 			<div class="container-fluid">
-			  <a class="navbar-brand" href="#"><img src="img/roseicon.png" width="72"/>Skimia Detection</a>
+			  <a class="navbar-brand" href="#"><img src="img/logo.png" width="72"/>Skimia Detection</a>
 			  <div>
 				<button type="button" class="btn btn-outline-primary"><i class="fa fa-github"></i> View code</button>
 				<button type="button" class="btn btn-primary"><i class="fa fa-magnifying-glass"></i> Analyze</button>
@@ -39,8 +39,36 @@
 			</form>
 		</div>
 
-		<div id="image_container" class="container central-container">
-			<img id="preview_image" class="image_size" />
+		<div id="image_container" class="container image-container">
+			<div class="row">
+				<div class="col">
+					<img id="preview_image" class="image_size" />
+				</div>
+				<div class="col">
+					<img id="preview_image" class="image_size" />
+				</div>
+			</div>
+		</div>
+
+		<div id="stats_container" class="container stats-container">
+			<table class="table text-center">
+				<thead>
+				  <tr>
+					<th scope="col">Qty. of flowers</th>
+					<th scope="col">param 1</th>
+					<th scope="col">param 2</th>
+					<th scope="col">param 3</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr class="table-active">
+					<th scope="row">2</th>
+					<td>1</td>
+					<td>3</td>
+					<td>7</td>
+				  </tr>
+				</tbody>
+			  </table>
 		</div>
 
 		<div id="notifier" class="notifier"></div>

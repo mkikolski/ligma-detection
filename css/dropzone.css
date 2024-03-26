@@ -15,8 +15,8 @@
 }
 
 .image_size {
-    max-height: 70vh !important;
-    max-width: 70vw !important;
+    max-height: 45vh !important;
+    max-width: 45vw !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 5px 5px 10px rgba(0, 0, 0, 0.2); 
 }
     
@@ -35,4 +35,19 @@
     justify-content: center !important;
     align-items: center !important;
     margin-top: 6% !important;
+  }
+
+  .stats-container {
+    visibility: hidden;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 2% !important;
+  }
+
+  .image-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 3% !important;
   }
